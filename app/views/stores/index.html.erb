@@ -1,0 +1,18 @@
+<h1>Store</h1>
+
+<ul>
+  <% @stores.each do |store| %>
+    <li>
+      <%= store.name %>
+    </li>
+    <li>
+      <%= store.cnpj %>
+    </li>
+    <li>
+      <%= store.address %>
+    </li>
+    <li>
+      <%= store.phone %>
+    </li>
+  <% end %>
+</ul> 

@@ -6,3 +6,90 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 26ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 6984)
 
 
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateStores (20211229031438)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "stores" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "cnpj" varchar, "address" varchar, "phone" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211229031438"]]
+  [1m[36mTRANSACTION (4.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-12-29 03:17:32.163427"], ["updated_at", "2021-12-29 03:17:32.163427"]]
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStore Create (0.5ms)[0m  [1m[32mINSERT INTO "stores" ("name", "cnpj", "address", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Delirius"], ["cnpj", "45298754635"], ["address", "rua tralala, 45"], ["phone", "87 5789655648"], ["created_at", "2021-12-29 03:28:00.993511"], ["updated_at", "2021-12-29 03:28:00.993511"]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for 127.0.0.1 at 2021-12-29 00:29:53 -0300
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StoresController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stores/index.html.erb within layouts/application
+  Rendered stores/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 3244)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 3332)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms | Allocations: 10311)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1>Store</h1>
+    2: 
+    3: <ul>
+    4:   <% @stores.each do |store| %>
+    5:     <li>
+    6:       <%= store.name %>
+    7:     </li>
+  
+app/views/stores/index.html.erb:4
+Started GET "/" for 127.0.0.1 at 2021-12-29 00:30:41 -0300
+Processing by StoresController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stores/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/stores/index.html.erb:4
+  [1m[36mStore Load (0.4ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/views/stores/index.html.erb:4
+  Rendered stores/index.html.erb within layouts/application (Duration: 9.0ms | Allocations: 6626)
+  Rendered layout layouts/application.html.erb (Duration: 227.9ms | Allocations: 100435)
+Completed 200 OK in 231ms (Views: 229.0ms | ActiveRecord: 1.1ms | Allocations: 101804)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-29 00:32:38 -0300
+Processing by StoresController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stores/index.html.erb within layouts/application
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/views/stores/index.html.erb:4
+  Rendered stores/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 550)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 2801)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.2ms | Allocations: 3140)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-29 00:32:48 -0300
+Processing by StoresController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stores/index.html.erb within layouts/application
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/views/stores/index.html.erb:4
+  Rendered stores/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 550)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 2764)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.2ms | Allocations: 3103)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-29 00:32:49 -0300
+Processing by StoresController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stores/index.html.erb within layouts/application
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/views/stores/index.html.erb:4
+  Rendered stores/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 550)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 2759)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.2ms | Allocations: 3098)
+
+
