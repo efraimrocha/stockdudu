@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  store: one
+  code: MyString
+  ean: MyString
+  name: MyString
+  quantity: 1
+  description: MyString
+  unity: MyString
+  category: MyString
+
+two:
+  store: two
+  code: MyString
+  ean: MyString
+  name: MyString
+  quantity: 1
+  description: MyString
+  unity: MyString
+  category: MyString
