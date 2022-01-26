@@ -467,3 +467,873 @@ FOREIGN KEY ("store_id")
   [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2022-01-11 23:55:28 -0300
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StoresController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stores/index.html.erb within layouts/application
+  [1m[36mStore Load (0.3ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/views/stores/index.html.erb:4
+  Rendered stores/index.html.erb within layouts/application (Duration: 27.2ms | Allocations: 8232)
+  Rendered layout layouts/application.html.erb (Duration: 27.5ms | Allocations: 8320)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.3ms | Allocations: 16182)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    70:   <textarea class="form-control" aria-label="With textarea"></textarea>
+    71: </div>
+    72: 
+    73: <h1><%= @product.title %></h1>
+  
+app/views/stores/index.html.erb:73
+Started GET "/" for 127.0.0.1 at 2022-01-11 23:56:23 -0300
+Processing by StoresController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stores/index.html.erb within layouts/application
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/views/stores/index.html.erb:4
+  Rendered stores/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 4593)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 4673)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.2ms | Allocations: 5679)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    70:   <textarea class="form-control" aria-label="With textarea"></textarea>
+    71: 
+    72: 
+    73: <h1><%= @product.title %></h1>
+  
+app/views/stores/index.html.erb:73
+Started GET "/" for 127.0.0.1 at 2022-01-11 23:56:26 -0300
+Processing by StoresController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stores/index.html.erb within layouts/application
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/views/stores/index.html.erb:4
+  Rendered stores/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 4071)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 4150)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms | Allocations: 4456)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    70:   <textarea class="form-control" aria-label="With textarea"></textarea>
+    71: 
+    72: 
+    73: <h1><%= @product.title %></h1>
+  
+app/views/stores/index.html.erb:73
+Started GET "/" for 127.0.0.1 at 2022-01-11 23:56:41 -0300
+Processing by StoresController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stores/index.html.erb within layouts/application
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/views/stores/index.html.erb:4
+  Rendered stores/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 3337)
+  Rendered layout layouts/application.html.erb (Duration: 88.2ms | Allocations: 37622)
+Completed 200 OK in 93ms (Views: 91.2ms | ActiveRecord: 0.2ms | Allocations: 38681)
+
+
+Started POST "/" for 127.0.0.1 at 2022-01-11 23:56:56 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started GET "/" for 127.0.0.1 at 2022-01-11 23:56:56 -0300
+Processing by StoresController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stores/index.html.erb within layouts/application
+  [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/views/stores/index.html.erb:4
+  Rendered stores/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 2829)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 4887)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.1ms | Allocations: 5225)
+
+
+Started GET "/" for 127.0.0.1 at 2022-01-11 23:57:36 -0300
+Processing by StoresController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stores/index.html.erb within layouts/application
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/views/stores/index.html.erb:4
+  Rendered stores/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 3340)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 5668)
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.2ms | Allocations: 6708)
+
+
+Started GET "/" for 127.0.0.1 at 2022-01-12 00:18:41 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StoresController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stores/index.html.erb within layouts/application
+  Rendered stores/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1495)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 1575)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 4081)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Store</h1>
+
+<ul>
+  <% @stores.each do |store| %>
+    <li>
+      <%= store.name %>
+    </li>
+    <li>
+      <%= store.cnpj %>
+    </li>
+    <li>
+      <%= store.address %>
+    </li>
+    <li>
+      <%= store.phone %>
+    </li>
+  <% end %>
+</ul> 
+
+<h1>Produto</h1>
+
+<ul>
+  <% @stores.product.each do |product| %>
+    <li>
+      <%= store.code %>
+    </li>     
+    <li>
+       <%= store.ean %>
+    </li>
+      <%= store.name %>
+    <li>
+      <%= store.quantity %>
+    </li>
+    <li>
+      <%= store.description %>
+    </li>
+    <li>
+    <%= store.code %>
+    </li>
+
+
+
+
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+<h1>Entrar</h1>
+
+
+#FORMULARIO DE LOGIN
+<%= form_with model: @store do |form| %>
+  <div>
+    <%= form.label :Usuário %><br>
+    <%= form.text_field :user %>
+  </div>
+
+  <div>
+    <%= form.label :Senha %><br>
+    <%= form.text_field :senha %><br>
+  </div>
+
+  <div><br>
+    <%= form.submit %>
+  </div>as
+<% end %>
+
+<div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon1">@</span>
+  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <span class="input-group-text" id="basic-addon2">@example.com</span>
+</div>
+
+<label for="basic-url" class="form-label">Your vanity URL</label>
+<div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+  <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+</div>
+
+<div class="input-group mb-3">
+  <span class="input-group-text">$</span>
+  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+  <span class="input-group-text">.00</span>
+</div>
+
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+  <span class="input-group-text">@</span>
+  <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+</div>
+
+<div class="input-group">
+  <span class="input-group-text">With textarea</span>
+  <textarea class="form-control" aria-label="With textarea"></textarea>
+</div>
+
+
+<div>
+
+
+
+</div>
+):
+1:    <h1>Store</h1>
+2:    
+3:    <ul>
+4:      <% @stores.each do |store| %>
+5:        <li>
+6:          <%= store.name %>
+7:        </li>
+8:        <li>
+9:          <%= store.cnpj %>
+10:        </li>
+11:        <li>
+12:          <%= store.address %>
+13:        </li>
+14:        <li>
+15:          <%= store.phone %>
+16:        </li>
+17:      <% end %>
+18:    </ul> 
+19:    
+20:    <h1>Produto</h1>
+21:    
+22:    <ul>
+23:      <% @stores.product.each do |product| %>
+24:        <li>
+25:          <%= store.code %>
+26:        </li>     
+27:        <li>
+28:           <%= store.ean %>
+29:        </li>
+30:          <%= store.name %>
+31:        <li>
+32:          <%= store.quantity %>
+33:        </li>
+34:        <li>
+35:          <%= store.description %>
+36:        </li>
+37:        <li>
+38:        <%= store.code %>
+39:        </li>
+40:    
+41:    
+42:    
+43:    
+44:    </ul>
+45:    
+46:    
+47:    
+48:    
+49:    
+50:    
+51:    
+52:    
+53:    
+54:    
+55:    
+56:    
+57:    <h1>Entrar</h1>
+58:    
+59:    
+60:    #FORMULARIO DE LOGIN
+61:    <%= form_with model: @store do |form| %>
+62:      <div>
+63:        <%= form.label :Usuário %><br>
+64:        <%= form.text_field :user %>
+65:      </div>
+66:    
+67:      <div>
+68:        <%= form.label :Senha %><br>
+69:        <%= form.text_field :senha %><br>
+70:      </div>
+71:    
+72:      <div><br>
+73:        <%= form.submit %>
+74:      </div>as
+75:    <% end %>
+76:    
+77:    <div class="input-group mb-3">
+78:      <span class="input-group-text" id="basic-addon1">@</span>
+79:      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+80:    </div>
+81:    
+82:    <div class="input-group mb-3">
+83:      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+84:      <span class="input-group-text" id="basic-addon2">@example.com</span>
+85:    </div>
+86:    
+87:    <label for="basic-url" class="form-label">Your vanity URL</label>
+88:    <div class="input-group mb-3">
+89:      <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+90:      <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+91:    </div>
+92:    
+93:    <div class="input-group mb-3">
+94:      <span class="input-group-text">$</span>
+95:      <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+96:      <span class="input-group-text">.00</span>
+97:    </div>
+98:    
+99:    <div class="input-group mb-3">
+100:      <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+101:      <span class="input-group-text">@</span>
+102:      <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+103:    </div>
+104:    
+105:    <div class="input-group">
+106:      <span class="input-group-text">With textarea</span>
+107:      <textarea class="form-control" aria-label="With textarea"></textarea>
+108:    </div>
+109:    
+110:    
+111:    <div>
+112:    
+113:    
+114:    
+115:    </div>
+  
+app/views/stores/index.html.erb:117: syntax error, unexpected end-of-input, expecting `end'
+app/views/stores/index.html.erb:117: syntax error, unexpected end-of-input, expecting `end'
+app/views/stores/index.html.erb:117: syntax error, unexpected end-of-input, expecting `end'
+app/views/stores/index.html.erb:117: syntax error, unexpected end-of-input, expecting `end'
+app/views/stores/index.html.erb:117: syntax error, unexpected end-of-input, expecting `end'
+app/views/stores/index.html.erb:117: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for 127.0.0.1 at 2022-01-12 00:23:00 -0300
+Processing by StoresController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stores/index.html.erb within layouts/application
+  Rendered stores/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1473)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 1553)
+Completed 500 Internal Server Error in 19ms (Allocations: 5910)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Store</h1>
+
+<ul>
+  <% @stores.each do |store| %>
+    <li>
+      <%= store.name %>
+    </li>
+    <li>
+      <%= store.cnpj %>
+    </li>
+    <li>
+      <%= store.address %>
+    </li>
+    <li>
+      <%= store.phone %>
+    </li>
+  <% end %>
+</ul> 
+
+<h1>Produto</h1>
+
+<ul>
+  <% @stores.product.each do |product| %>
+    <li>
+      <%= store.code %>
+    </li>     
+    <li>
+       <%= store.ean %>
+    </li>
+      <%= store.name %>
+    <li>
+      <%= store.quantity %>
+    </li>
+    <li>
+      <%= store.description %>
+    </li>
+    <li>
+    <%= store.code %>
+    </li>
+
+
+
+
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+<h1>Entrar</h1>
+
+
+#FORMULARIO DE LOGIN
+<%= form_with model: @store do |form| %>
+  <div>
+    <%= form.label :Usuário %><br>
+    <%= form.text_field :user %>
+  </div>
+
+  <div>
+    <%= form.label :Senha %><br>
+    <%= form.text_field :senha %><br>
+  </div>
+
+  <div><br>
+    <%= form.submit %>
+  </div>as
+<% end %>
+
+<div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon1">@</span>
+  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <span class="input-group-text" id="basic-addon2">@example.com</span>
+</div>
+
+<label for="basic-url" class="form-label">Your vanity URL</label>
+<div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+  <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+</div>
+
+<div class="input-group mb-3">
+  <span class="input-group-text">$</span>
+  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+  <span class="input-group-text">.00</span>
+</div>
+
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+  <span class="input-group-text">@</span>
+  <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+</div>
+
+<div class="input-group">
+  <span class="input-group-text">With textarea</span>
+  <textarea class="form-control" aria-label="With textarea"></textarea>
+</div>
+
+
+<div>
+
+
+
+</div>
+):
+1:    <h1>Store</h1>
+2:    
+3:    <ul>
+4:      <% @stores.each do |store| %>
+5:        <li>
+6:          <%= store.name %>
+7:        </li>
+8:        <li>
+9:          <%= store.cnpj %>
+10:        </li>
+11:        <li>
+12:          <%= store.address %>
+13:        </li>
+14:        <li>
+15:          <%= store.phone %>
+16:        </li>
+17:      <% end %>
+18:    </ul> 
+19:    
+20:    <h1>Produto</h1>
+21:    
+22:    <ul>
+23:      <% @stores.product.each do |product| %>
+24:        <li>
+25:          <%= store.code %>
+26:        </li>     
+27:        <li>
+28:           <%= store.ean %>
+29:        </li>
+30:          <%= store.name %>
+31:        <li>
+32:          <%= store.quantity %>
+33:        </li>
+34:        <li>
+35:          <%= store.description %>
+36:        </li>
+37:        <li>
+38:        <%= store.code %>
+39:        </li>
+40:    
+41:    
+42:    
+43:    
+44:    </ul>
+45:    
+46:    
+47:    
+48:    
+49:    
+50:    
+51:    
+52:    
+53:    
+54:    
+55:    
+56:    
+57:    <h1>Entrar</h1>
+58:    
+59:    
+60:    #FORMULARIO DE LOGIN
+61:    <%= form_with model: @store do |form| %>
+62:      <div>
+63:        <%= form.label :Usuário %><br>
+64:        <%= form.text_field :user %>
+65:      </div>
+66:    
+67:      <div>
+68:        <%= form.label :Senha %><br>
+69:        <%= form.text_field :senha %><br>
+70:      </div>
+71:    
+72:      <div><br>
+73:        <%= form.submit %>
+74:      </div>as
+75:    <% end %>
+76:    
+77:    <div class="input-group mb-3">
+78:      <span class="input-group-text" id="basic-addon1">@</span>
+79:      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+80:    </div>
+81:    
+82:    <div class="input-group mb-3">
+83:      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+84:      <span class="input-group-text" id="basic-addon2">@example.com</span>
+85:    </div>
+86:    
+87:    <label for="basic-url" class="form-label">Your vanity URL</label>
+88:    <div class="input-group mb-3">
+89:      <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+90:      <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+91:    </div>
+92:    
+93:    <div class="input-group mb-3">
+94:      <span class="input-group-text">$</span>
+95:      <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+96:      <span class="input-group-text">.00</span>
+97:    </div>
+98:    
+99:    <div class="input-group mb-3">
+100:      <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+101:      <span class="input-group-text">@</span>
+102:      <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+103:    </div>
+104:    
+105:    <div class="input-group">
+106:      <span class="input-group-text">With textarea</span>
+107:      <textarea class="form-control" aria-label="With textarea"></textarea>
+108:    </div>
+109:    
+110:    
+111:    <div>
+112:    
+113:    
+114:    
+115:    </div>
+  
+app/views/stores/index.html.erb:117: syntax error, unexpected end-of-input, expecting `end'
+app/views/stores/index.html.erb:117: syntax error, unexpected end-of-input, expecting `end'
+app/views/stores/index.html.erb:117: syntax error, unexpected end-of-input, expecting `end'
+app/views/stores/index.html.erb:117: syntax error, unexpected end-of-input, expecting `end'
+app/views/stores/index.html.erb:117: syntax error, unexpected end-of-input, expecting `end'
+app/views/stores/index.html.erb:117: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for 127.0.0.1 at 2022-01-12 00:37:52 -0300
+Processing by StoresController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stores/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/stores/index.html.erb:4
+  [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/views/stores/index.html.erb:4
+  Rendered stores/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1393)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 15003)
+Completed 200 OK in 26ms (Views: 18.4ms | ActiveRecord: 0.4ms | Allocations: 18760)
+
+
+Started GET "/" for 127.0.0.1 at 2022-01-12 00:38:17 -0300
+Processing by StoresController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stores/index.html.erb within layouts/application
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/views/stores/index.html.erb:4
+  Rendered stores/index.html.erb within layouts/application (Duration: 8.9ms | Allocations: 3814)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 6141)
+Completed 200 OK in 19ms (Views: 17.5ms | ActiveRecord: 0.2ms | Allocations: 7185)
+
+
+Started GET "/" for 127.0.0.1 at 2022-01-12 00:38:34 -0300
+Processing by StoresController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stores/index.html.erb within layouts/application
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/views/stores/index.html.erb:4
+  Rendered stores/index.html.erb within layouts/application (Duration: 14.3ms | Allocations: 3332)
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 5677)
+Completed 200 OK in 24ms (Views: 22.4ms | ActiveRecord: 0.2ms | Allocations: 6722)
+
+
+Started GET "/" for 127.0.0.1 at 2022-01-12 00:39:42 -0300
+Processing by StoresController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stores/index.html.erb within layouts/application
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/views/stores/index.html.erb:4
+  Rendered stores/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 751)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 3261)
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 0.2ms | Allocations: 4305)
+
+
+Started GET "/" for 127.0.0.1 at 2022-01-12 00:40:02 -0300
+Processing by StoresController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stores/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/stores/index.html.erb:4
+  [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/views/stores/index.html.erb:4
+  Rendered stores/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1153)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 14538)
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 0.3ms | Allocations: 16756)
+
+
+Started GET "/" for 127.0.0.1 at 2022-01-16 04:32:21 -0300
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StoresController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stores/index.html.erb within layouts/application
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/views/stores/index.html.erb:4
+  Rendered stores/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1106)
+  Rendered layout layouts/application.html.erb (Duration: 77.4ms | Allocations: 35793)
+Completed 200 OK in 95ms (Views: 80.5ms | ActiveRecord: 0.2ms | Allocations: 43481)
+
+
+Started GET "/" for 127.0.0.1 at 2022-01-25 20:39:11 -0300
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StoresController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stores/index.html.erb within layouts/application
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/views/stores/index.html.erb:4
+  Rendered stores/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1106)
+  Rendered layout layouts/application.html.erb (Duration: 83.8ms | Allocations: 35883)
+Completed 200 OK in 101ms (Views: 86.8ms | ActiveRecord: 0.2ms | Allocations: 43571)
+
+
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStore Create (0.2ms)[0m  [1m[32mINSERT INTO "stores" ("name", "cnpj", "address", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Padaria do Gordo"], ["cnpj", "1548522366"], ["address", "rua perto daqui"], ["phone", "854596587"], ["created_at", "2022-01-26 00:00:32.904716"], ["updated_at", "2022-01-26 00:00:32.904716"]]
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProduct Create (0.2ms)[0m  [1m[32mINSERT INTO "products" ("store_id", "code", "ean", "name", "quantity", "description", "unity", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["store_id", 1], ["code", "0125"], ["ean", "1254789652365"], ["name", "pão cacetinho"], ["quantity", 40], ["description", "pão duro"], ["unity", "Kg"], ["category", "massas"], ["created_at", "2022-01-26 00:00:32.925737"], ["updated_at", "2022-01-26 00:00:32.925737"]]
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  [1m[36mStore Load (0.3ms)[0m  [1m[34mSELECT "stores".* FROM "stores" ORDER BY "stores"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."store_id" = ?[0m  [["store_id", 1]]
+Started GET "/" for 127.0.0.1 at 2022-01-25 21:03:16 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StoresController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stores/index.html.erb within layouts/application
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/views/stores/index.html.erb:4
+  Rendered stores/index.html.erb within layouts/application (Duration: 12.6ms | Allocations: 6074)
+  Rendered layout layouts/application.html.erb (Duration: 70.2ms | Allocations: 40907)
+Completed 200 OK in 80ms (Views: 71.1ms | ActiveRecord: 1.3ms | Allocations: 48595)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2022-01-25 21:03:58 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/products/1"):
+  
+Started GET "/store/1/product" for 127.0.0.1 at 2022-01-25 21:05:02 -0300
+  
+ActionController::RoutingError (uninitialized constant ProductController
+Did you mean?  ProductsController):
+  
+Started GET "/store_1/product" for 127.0.0.1 at 2022-01-25 21:05:18 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/store_1/product"):
+  
+Started GET "/store/1/product/1" for 127.0.0.1 at 2022-01-25 21:05:45 -0300
+  
+ActionController::RoutingError (uninitialized constant ProductController
+Did you mean?  ProductsController):
+  
+Started GET "/" for 127.0.0.1 at 2022-01-25 21:27:42 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StoresController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering stores/index.html.erb within layouts/application
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  ↳ app/views/stores/index.html.erb:4
+  Rendered stores/index.html.erb within layouts/application (Duration: 10.1ms | Allocations: 6074)
+  Rendered layout layouts/application.html.erb (Duration: 86.1ms | Allocations: 40722)
+Completed 200 OK in 100ms (Views: 87.9ms | ActiveRecord: 0.7ms | Allocations: 48410)
+
+
+Started GET "/store/1" for 127.0.0.1 at 2022-01-25 21:27:58 -0300
+  
+ActionController::RoutingError (uninitialized constant StoreController
+Did you mean?  StoresController):
+  
+Started GET "/store/1" for 127.0.0.1 at 2022-01-25 21:30:21 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/store/1"):
+  
+Started GET "/store/1" for 127.0.0.1 at 2022-01-25 21:30:22 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/store/1"):
+  
+Started GET "/store/1" for 127.0.0.1 at 2022-01-25 21:30:23 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/store/1"):
+  
+Started GET "/stores/1" for 127.0.0.1 at 2022-01-25 21:30:40 -0300
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/stores_controller.rb:8:in `show'
+  [1m[36mStore Load (0.4ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering stores/show.html.erb within layouts/application
+  Rendered stores/show.html.erb within layouts/application (Duration: 7.0ms | Allocations: 4477)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 4556)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 2.2ms | Allocations: 11485)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `store' for #<ActionView::Base:0x00000000011968>
+Did you mean?  @store):
+    2: 
+    3: <ul>
+    4:     <li>
+    5:       <%= store.name %>
+    6:     </li>
+    7:     <li>
+    8:       <%= store.cnpj %>
+  
+app/views/stores/show.html.erb:5
+Started GET "/stores/1" for 127.0.0.1 at 2022-01-25 21:31:28 -0300
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/stores_controller.rb:8:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering stores/show.html.erb within layouts/application
+  Rendered stores/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 244)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 13851)
+Completed 200 OK in 18ms (Views: 16.2ms | ActiveRecord: 0.1ms | Allocations: 15327)
+
+
+Started GET "/stores/1/products/1" for 127.0.0.1 at 2022-01-25 21:32:01 -0300
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for ProductsController):
+  
+actionpack (7.0.0) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.0) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.0) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.0) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.0) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.0) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.0) lib/action_dispatch/routing/route_set.rb:850:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (7.0.0) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (7.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.0) lib/action_dispatch/middleware/cookies.rb:693:in `call'
+activerecord (7.0.0) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.0) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.0) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.0) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.0) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.0) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.0) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.0) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.0) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.0) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.0) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.0) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.0) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.0) lib/rails/engine.rb:530:in `call'
+puma (5.5.2) lib/puma/configuration.rb:249:in `call'
+puma (5.5.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.5.2) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.5.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.5.2) lib/puma/server.rb:447:in `process_client'
+puma (5.5.2) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/stores/1/products/1" for 127.0.0.1 at 2022-01-25 21:43:03 -0300
+Processing by ProductsController#show as HTML
+  Parameters: {"store_id"=>"1", "id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/products_controller.rb:15:in `show'
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:15:in `show'
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."store_id" = ? AND "products"."id" = ? LIMIT ?[0m  [["store_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:16:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 461)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 14086)
+Completed 200 OK in 42ms (Views: 15.0ms | ActiveRecord: 1.2ms | Allocations: 32484)
+
+

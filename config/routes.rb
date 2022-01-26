@@ -5,5 +5,8 @@ Rails.application.routes.draw do
   # root "articles#index"
   root 'stores#index'
 
+  resources :stores do
+    resources :products
+  end
 end
 

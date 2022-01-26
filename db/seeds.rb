@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+loja = Store.create(name:"Padaria do Gordo",cnpj:"1548522366",address:"rua perto daqui",phone:"854596587")
+produto = Product.create(code:"0125",ean:"1254789652365",name:"pão cacetinho",quantity:40,description:"pão duro",unity: "Kg",category: "massas",store: loja)
