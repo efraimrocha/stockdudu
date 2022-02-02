@@ -1,0 +1,42 @@
+<h1>Cadastrar novo produto</h1>
+
+<%= form_with model: @product do |form| %>
+  <div>
+    <%= form.label :code, "Código" %><br>
+    <%= form.text_field :code %>
+  </div>
+
+  <div>
+    <%= form.label :ean, "Código de barras" %><br>
+    <%= form.text_field :ean %>
+  </div>
+
+  <div>
+    <%= form.label :name, "Nome" %><br>
+    <%= form.text_field :name %>
+  </div>
+  
+  <div>
+    <%= form.label :quantity, "Quantidade" %><br>
+    <%= form.text_field :quantity %>
+  </div>
+  
+  <div>
+    <%= form.label :description, "Descrição" %><br>
+    <%= form.text_field :description %>
+  </div>
+
+  <div>
+    <%= form.label :unity, "Unidade" %><br>
+    <%= form.text_field :unity %>
+  </div>
+
+    <div>
+    <%= form.label :category, "Categoria" %><br>
+    <%= form.text_field :category %>
+  </div>
+
+  <div>
+    <%= form.submit "Criar" %>
+  </div>
+<% end %>
