@@ -1,0 +1,27 @@
+<h1>Cadastrar nova loja</h1>
+
+<%= form_with model: @store do |form| %>
+  <div>
+    <%= form.label :name, "Nome" %><br>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :cnpj, "Cnpj" %><br>
+    <%= form.text_field :cnpj %>
+  </div>
+
+  <div>
+    <%= form.label :address, "Endereço" %><br>
+    <%= form.text_field :address %>
+  </div>
+  
+  <div>
+    <%= form.label :phone, "Telefone" %><br>
+    <%= form.text_field :phone %>
+  </div>
+
+  <div>
+    <%= form.submit "Criar" %>
+  </div>
+<% end %>
